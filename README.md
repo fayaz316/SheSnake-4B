@@ -1,8 +1,8 @@
-# SheSnake-4B
+# SheSnake-4B 🇫🇷
 
 **Bonjour.**
 
-SheSnake-4B is an exploratory QLoRA adaptation of
+SheSnake-4B is an exploratory 🇫🇷 QLoRA adaptation of
 [`Qwen/Qwen3-4B-Instruct-2507`](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507)
 for compact Python function generation. It was trained locally in France on 104
 checker-verified MBPP training examples. Training was performed in France; the model
