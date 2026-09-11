@@ -1,0 +1,37 @@
+# Secrets / credentials
+.env
+.env.*
+*.key
+secrets/
+
+# Eval outputs (large; keep manifests, not raw dumps unless intentionally committed)
+eval/runs/**/raw/
+eval/runs/
+*.log
+
+# Model weights / checkpoints
+*.safetensors
+*.bin
+*.gguf
+models/
+.cache/
+finetune/checkpoints/
+finetune/adapters/
+data/cache/
+
+# Local benchmark generations and executable-eval outputs
+eval/evalplus_results/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+eval/manifests/runs/*-mock-*.json

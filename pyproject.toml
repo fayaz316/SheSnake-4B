@@ -1,0 +1,17 @@
+[project]
+name = "shesnake-4b"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+local = [
+    "datasets==5.0.1",
+    "evalplus==0.3.1",
+    "mlx-lm[train]==0.31.3",
+    "mlx-vlm==0.7.0",
+]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools]
+packages = ["benchmark", "data", "finetune"]

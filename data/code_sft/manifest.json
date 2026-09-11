@@ -1,0 +1,12 @@
+{
+  "source": "google-research-datasets/mbpp",
+  "config": "sanitized",
+  "source_split": "train",
+  "primary_benchmark": "HumanEval+",
+  "accepted": 120,
+  "rejected": 0,
+  "train": 104,
+  "valid": 16,
+  "verification": "compile + supplied assertions in python -I subprocess",
+  "prompt_overlap_screen": "no normalized literal-similarity match >= 0.82 against HumanEval+ prompts"
+}

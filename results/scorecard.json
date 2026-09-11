@@ -1,0 +1,86 @@
+{
+  "release": "SheSnake-4B",
+  "status": "exploratory_local_result",
+  "benchmark": "EvalPlus 0.3.1 HumanEval+",
+  "task_count": 164,
+  "decoding": {
+    "samples_per_task": 1,
+    "greedy": true,
+    "temperature": 0.0,
+    "max_new_tokens": 768
+  },
+  "models": {
+    "ministral": {
+      "display_name": "Ministral-3-3B-Instruct-2512-4bit",
+      "checkpoint": "mlx-community/Ministral-3-3B-Instruct-2512-4bit",
+      "checkpoint_revision": "a962dcb09eee4169c890e544c9eb938f1113fdee",
+      "humaneval": {
+        "passes": 124,
+        "total": 164,
+        "pass_at_1": 0.7560975609756098
+      },
+      "humaneval_plus": {
+        "passes": 117,
+        "total": 164,
+        "pass_at_1": 0.7134146341463414
+      },
+      "artifacts": {
+        "raw_generations": {
+          "path": "results/generations/ministral.raw.jsonl",
+          "sha256": "8b795ce1465524c078368d305762ce006339b5f534c5bce53dcffe7e07912f36"
+        },
+        "sanitized_generations": {
+          "path": "results/generations/ministral.jsonl",
+          "sha256": "0254136616f9d381fb570c1ae027855b016d7f53de462e22f9d71f1cd618e3f0"
+        },
+        "evaluation": {
+          "path": "results/evaluations/ministral.json",
+          "sha256": "ebff6f33072586379e147c5d4d6fa49fbf2d9b0108dd0ea6e5a0844a0a133669"
+        }
+      }
+    },
+    "shesnake-4b": {
+      "display_name": "SheSnake-4B",
+      "checkpoint": "mlx-community/Qwen3-4B-Instruct-2507-4bit + QLoRA adapter",
+      "checkpoint_revision": "50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b",
+      "humaneval": {
+        "passes": 140,
+        "total": 164,
+        "pass_at_1": 0.8536585365853658
+      },
+      "humaneval_plus": {
+        "passes": 130,
+        "total": 164,
+        "pass_at_1": 0.7926829268292683
+      },
+      "artifacts": {
+        "raw_generations": {
+          "path": "results/generations/shesnake-4b.raw.jsonl",
+          "sha256": "9cf852b9968e80b82e1009ebe71de77e01e6d1c89821d6ae2869f6e1097aeacf"
+        },
+        "sanitized_generations": {
+          "path": "results/generations/shesnake-4b.jsonl",
+          "sha256": "f9460e56d0b8424af55007553cdf865b75d485cdd13832ed2c6a40cf5d578513"
+        },
+        "evaluation": {
+          "path": "results/evaluations/shesnake-4b.json",
+          "sha256": "b3fd5c008b0acda39df530574d086b9fd8de8e7a7bd62d5eccbee09d86fbb672"
+        }
+      }
+    }
+  },
+  "integrity": {
+    "humaneval_solutions_used_for_training": false,
+    "full_untuned_qwen_ablation_complete": false,
+    "external_leaderboard_result": false
+  },
+  "paired_humaneval_plus": {
+    "both_pass": 109,
+    "shesnake_only": 21,
+    "ministral_only": 8,
+    "neither_pass": 26,
+    "delta_tasks": 13,
+    "delta_percentage_points": 7.926829268292683,
+    "exact_two_sided_mcnemar_p": 0.0241195447742939
+  }
+}
