@@ -19,8 +19,7 @@ license: apache-2.0
 
 SheSnake-4B is an exploratory 🇫🇷 MLX QLoRA adapter for
 [`Qwen/Qwen3-4B-Instruct-2507`](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507),
-specialized on compact Python function-generation examples. It was trained locally in
-France. This is training provenance, not a claim of French-language specialization.
+specialized on compact Python function-generation examples.
 
 This is an adapter derivative, not a foundation model trained from scratch.
 

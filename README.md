@@ -4,9 +4,8 @@
 
 SheSnake-4B is an exploratory 🇫🇷 QLoRA adaptation of
 [`Qwen/Qwen3-4B-Instruct-2507`](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507)
-for compact Python function generation. It was trained locally in France on 104
-checker-verified MBPP training examples. Training was performed in France; the model
-is not presented as French-language-specialized.
+for compact Python function generation. It was trained on 104 checker-verified MBPP
+training examples.
 
 Under one matched local EvalPlus 0.3.1 protocol, SheSnake-4B scored **79.3%** on
 HumanEval+ versus **71.3%** for the specified 4-bit MLX conversion of
